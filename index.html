@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RS Automotive | Auto Elétrica e Injeção Eletrônica no Jd. Novo Santo Amaro, SP</title>
+    <meta
+      name="description"
+      content="Auto elétrica e injeção eletrônica no Jardim Novo Santo Amaro, São Paulo. Motor de partida, alternador, vidro e trava elétrica, som, alarme e bateria. Atendimento direto com o Ronei. WhatsApp (11) 95281-7706."
+    />
+    <meta name="theme-color" content="#111113" />
+    <link rel="icon" type="image/png" href="./favicon.png" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:title" content="RS Automotive | Elétrica e Injeção" />
+    <meta property="og:description" content="Elétrica e injeção para o seu carro voltar a funcionar. Jd. Novo Santo Amaro, São Paulo." />
+    <meta property="og:image" content="./og-image.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <script>
+      // Decide antes da pintura se a cena 3D roda (WebGL disponível e sem movimento reduzido)
+      ;(function () {
+        var q = new URLSearchParams(location.search)
+        var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches && !q.has('capture')
+        var gl = false
+        try {
+          var c = document.createElement('canvas')
+          gl = !!(c.getContext('webgl2') || c.getContext('webgl'))
+        } catch (e) {}
+        var root = document.documentElement
+        if (gl && !reduce && !q.has('static')) root.classList.add('has-3d')
+        if (!reduce && !q.has('capture')) root.classList.add('is-loading')
+      })()
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Jost:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preload" as="image" href="./img/logo-rs-720.webp" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "AutoRepair",
+        "name": "RS Automotive",
+        "description": "Auto elétrica e injeção eletrônica: injeção eletrônica, motor de partida, alternador, vidro elétrico, trava elétrica, som, alarme, bateria e acessórios.",
+        "image": "./og-image.jpg",
+        "telephone": ["+55-11-4171-5554", "+55-11-95281-7706"],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Rua José Barros Magaldi, 1253",
+          "addressLocality": "São Paulo",
+          "addressRegion": "SP",
+          "postalCode": "05815-010",
+          "addressCountry": "BR"
+        },
+        "areaServed": "Jardim Novo Santo Amaro, São Paulo",
+        "sameAs": ["https://www.instagram.com/rsautomotive_/", "https://www.facebook.com/RS-Automotive-2374136982819591"]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <!-- ===================== ABERTURA (ignição) ===================== -->
+    <div class="intro" data-intro aria-hidden="true">
+      <img class="intro-logo" src="./img/logo-rs-720.webp" alt="" width="360" height="119" />
+      <div class="intro-meter">
+        <span class="intro-label">Ligando o sistema</span>
+        <span class="intro-volts"><b data-intro-volts>0,0</b> V</span>
+      </div>
+      <div class="intro-bar"><span data-intro-bar></span></div>
+    </div>
+
+    <!-- ===================== HEADER ===================== -->
+    <header class="site-header" data-header>
+      <div class="container-x header-inner">
+        <a href="#inicio" class="brand" aria-label="RS Automotive, Elétrica e Injeção. Voltar ao início">
+          <img
+            src="./img/logo-rs-720.webp"
+            srcset="./img/logo-rs-720.webp 720w, ./img/logo-rs-1200.webp 1200w"
+            sizes="200px"
+            alt="RS Automotive, Elétrica e Injeção"
+            width="720"
+            height="238"
+          />
+        </a>
+
+        <nav class="main-nav" aria-label="Principal">
+          <a href="#inicio" class="nav-link"><span class="roll" data-text="Início">Início</span></a>
+          <a href="#servicos" class="nav-link"><span class="roll" data-text="Serviços">Serviços</span></a>
+          <a href="#oficina" class="nav-link"><span class="roll" data-text="A oficina">A oficina</span></a>
+          <a href="#contato" class="nav-link"><span class="roll" data-text="Contato">Contato</span></a>
+        </nav>
+
+        <div class="header-actions">
+          <a class="header-phone" href="tel:+551141715554">
+            <span class="header-phone-icon"><i data-lucide="phone" aria-hidden="true"></i></span>
+            <span><small>Ligue</small>(11) 4171-5554</span>
+          </a>
+          <a class="btn btn-gold btn-sm header-cta" data-wa="header" data-magnetic href="https://wa.me/5511952817706" target="_blank" rel="noopener">
+            <span class="btn-icon"><svg aria-hidden="true"><use href="#i-whatsapp" /></svg></span>
+            <span class="btn-text" data-text="WhatsApp">WhatsApp</span>
+          </a>
+          <button class="menu-btn" type="button" data-menu-toggle aria-expanded="false" aria-controls="menu-mobile" aria-label="Abrir menu">
+            <span></span><span></span>
+          </button>
+        </div>
+      </div>
+      <span class="header-progress" data-header-progress></span>
+    </header>
+
+    <!-- Menu do celular (tela cheia) -->
+    <div id="menu-mobile" class="mobile-menu" data-menu hidden>
+      <nav aria-label="Menu do celular">
+        <a href="#inicio" data-menu-link><small>01</small>Início</a>
+        <a href="#servicos" data-menu-link><small>02</small>Serviços</a>
+        <a href="#oficina" data-menu-link><small>03</small>A oficina</a>
+        <a href="#contato" data-menu-link><small>04</small>Contato</a>
+      </nav>
+      <div class="mobile-menu-foot" data-menu-link>
+        <a class="btn btn-gold w-full" data-wa="menu" href="https://wa.me/5511952817706" target="_blank" rel="noopener">
+          <span class="btn-icon"><svg aria-hidden="true"><use href="#i-whatsapp" /></svg></span>
+          <span class="btn-text" data-text="Chamar no WhatsApp">Chamar no WhatsApp</span>
+        </a>
+        <a class="mobile-phone" href="tel:+551141715554">Fixo (11) 4171-5554</a>
+      </div>
+    </div>
+
+    <main id="conteudo">
+      <!-- ===================== HERO + CENA DO CARRO (fixa durante a rolagem) ===================== -->
+      <section id="inicio" class="scene" data-scene aria-label="Início">
+        <div class="scene-stage" data-scene-stage>
+          <!-- Luminárias hexagonais de oficina no teto -->
+          <svg class="hex-ceiling" data-hex viewBox="0 0 1600 360" preserveAspectRatio="xMidYMin slice" aria-hidden="true"></svg>
+          <p class="bg-word" data-bg-word aria-hidden="true">AUTO ELÉTRICA</p>
+
+          <canvas class="scene-canvas" data-scene-canvas role="img" aria-label="Carro esportivo prata em 3D que abre por sistemas elétricos conforme a rolagem"></canvas>
+          <img class="scene-static" src="./img/etapas/etapa-1.webp" alt="Carro esportivo prata em visão três quartos" width="1200" height="750" />
+          <div class="scene-scrim" aria-hidden="true"></div>
+
+          <!-- Hero -->
+          <div class="hero-ui container-x" data-hero-ui>
+            <div class="hero-copy">
+              <p class="eyebrow eyebrow-live" data-hero-in><span class="live-dot"></span>Auto elétrica e injeção · Jd. Novo Santo Amaro, SP</p>
+              <h1 class="hero-title" data-split-hero>Elétrica e injeção para o seu carro <em>voltar a funcionar.</em></h1>
+              <p class="hero-sub" data-hero-in>
+                Injeção eletrônica, motor de partida, alternador, vidro e trava elétrica, som, alarme e bateria. Atendimento direto com o Ronei.
+              </p>
+              <div class="hero-actions" data-hero-in>
+                <a class="btn btn-gold btn-lg" data-wa="hero" data-magnetic href="https://wa.me/5511952817706" target="_blank" rel="noopener">
+                  <span class="btn-icon"><svg aria-hidden="true"><use href="#i-whatsapp" /></svg></span>
+                  <span class="btn-text" data-text="Falar no WhatsApp">Falar no WhatsApp</span>
+                </a>
+                <a class="btn btn-ghost btn-lg" data-magnetic data-scroll-to="1" href="#como-trabalhamos">
+                  <span class="btn-text" data-text="Ver como trabalhamos">Ver como trabalhamos</span>
+                  <span class="btn-icon btn-icon-down"><i data-lucide="arrow-down" aria-hidden="true"></i></span>
+                </a>
+              </div>
+              <ul class="hero-trust" data-hero-in>
+                <li><i data-lucide="user-check" aria-hidden="true"></i>Atendimento direto com o Ronei</li>
+                <li><i data-lucide="scan-search" aria-hidden="true"></i>Diagnóstico antes do orçamento</li>
+                <li><i data-lucide="clipboard-check" aria-hidden="true"></i>Ordem de serviço por escrito</li>
+              </ul>
+            </div>
+
+            <!-- Painel decorativo de scanner -->
+            <div class="hud" data-hud aria-hidden="true">
+              <div class="hud-head"><span class="live-dot"></span>Scanner · sistema elétrico</div>
+              <div class="hud-row"><span>Bateria</span><b><span data-count="12.6">0,0</span> V</b></div>
+              <div class="hud-row"><span>Carga do alternador</span><b><span data-count="14.2">0,0</span> V</b></div>
+              <div class="hud-row"><span>Injeção</span><b class="ok">OK</b></div>
+              <svg class="hud-wave" viewBox="0 0 240 48" preserveAspectRatio="none"><path data-wave d="M0 24" /></svg>
+            </div>
+          </div>
+
+          <div class="scroll-cue" data-scroll-cue aria-hidden="true"><span class="mouse"></span>Role para abrir o carro</div>
+
+          <!-- Etapas da rolagem -->
+          <div class="story-ui" data-story-ui id="como-trabalhamos">
+            <div class="story-copy" data-story-copy aria-live="polite">
+              <p class="eyebrow" data-story-counter>Etapa 1 de 8 · 0%</p>
+              <h2 class="story-title" data-story-title></h2>
+              <p class="story-text" data-story-text></p>
+              <div class="story-meta">
+                <span class="tag" data-story-tag></span>
+                <a class="link-arrow" href="#contato" data-story-cta hidden>
+                  <span class="btn-text" data-text="Pedir orçamento">Pedir orçamento</span>
+                  <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+            <div class="story-progress">
+              <div class="story-bar"><span data-story-bar></span></div>
+              <ol class="story-steps" aria-label="Etapas">
+                <li><button type="button" data-story-step><b>1</b> Inteiro</button></li>
+                <li><button type="button" data-story-step><b>2</b> Carroceria</button></li>
+                <li><button type="button" data-story-step><b>3</b> Bateria</button></li>
+                <li><button type="button" data-story-step><b>4</b> Injeção</button></li>
+                <li><button type="button" data-story-step><b>5</b> Partida</button></li>
+                <li><button type="button" data-story-step><b>6</b> Cabine</button></li>
+                <li><button type="button" data-story-step><b>7</b> Som</button></li>
+                <li><button type="button" data-story-step><b>8</b> Pronto</button></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sem WebGL ou com movimento reduzido: etapas empilhadas -->
+        <div class="story-fallback container-x" data-story-fallback>
+          <p class="eyebrow">Como trabalhamos</p>
+          <h2 class="section-title">O carro por dentro, sistema por sistema.</h2>
+          <ol class="fallback-list" data-fallback-list></ol>
+        </div>
+      </section>
+
+      <!-- ===================== FAIXA DE SERVIÇOS ===================== -->
+      <div class="ticker" aria-hidden="true">
+        <div class="ticker-track" data-ticker>
+          <span>Injeção eletrônica</span><span>Motor de partida</span><span>Alternador</span><span>Vidro elétrico</span><span>Trava elétrica</span>
+          <span>Som automotivo</span><span>Alarme</span><span>Bateria</span><span>Elétrica em geral</span>
+          <span>Injeção eletrônica</span><span>Motor de partida</span><span>Alternador</span><span>Vidro elétrico</span><span>Trava elétrica</span>
+          <span>Som automotivo</span><span>Alarme</span><span>Bateria</span><span>Elétrica em geral</span>
+        </div>
+      </div>
+
+      <!-- ===================== SERVIÇOS ===================== -->
+      <section id="servicos" class="section">
+        <div class="container-x">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow" data-reveal>Serviços</p>
+              <h2 class="section-title" data-split>Tudo o que o seu carro tem de elétrico e de injeção.</h2>
+            </div>
+            <p class="section-lead" data-reveal>Escolha o serviço e peça o orçamento direto no WhatsApp, já com a mensagem pronta.</p>
+          </div>
+          <ul class="services-grid" data-services></ul>
+        </div>
+      </section>
+
+      <!-- ===================== A OFICINA ===================== -->
+      <section id="oficina" class="section section-oficina">
+        <div class="container-x">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow" data-reveal>A oficina</p>
+              <h2 class="section-title" data-split>Por que levar o seu carro na RS.</h2>
+            </div>
+            <p class="section-lead" data-reveal>
+              A RS Automotive fica no Jardim Novo Santo Amaro, no estacionamento da Academia California. Quem atende é o Ronei, do diagnóstico à entrega do carro.
+            </p>
+          </div>
+
+          <ul class="why-grid">
+            <li class="why-card" data-reveal>
+              <span class="why-n">01</span>
+              <i data-lucide="user-check" aria-hidden="true"></i>
+              <h3>Você fala com quem conserta</h3>
+              <p>Sem intermediário. O Ronei recebe o carro, explica o defeito e faz o serviço.</p>
+            </li>
+            <li class="why-card" data-reveal>
+              <span class="why-n">02</span>
+              <i data-lucide="scan-search" aria-hidden="true"></i>
+              <h3>Diagnóstico antes do orçamento</h3>
+              <p>Primeiro a gente acha a causa. Depois você decide, sabendo o que vai ser feito.</p>
+            </li>
+            <li class="why-card" data-reveal>
+              <span class="why-n">03</span>
+              <i data-lucide="clipboard-check" aria-hidden="true"></i>
+              <h3>Tudo por escrito</h3>
+              <p>Você recebe a ordem de serviço com as peças e os valores detalhados.</p>
+            </li>
+          </ul>
+
+          <div class="oficina-grid">
+            <div class="steps-wrap">
+              <h3 class="steps-title" data-reveal>Como funciona</h3>
+              <ol class="steps" data-steps>
+                <svg class="steps-line" viewBox="0 0 4 100" preserveAspectRatio="none" aria-hidden="true"><path d="M2 0 V100" data-steps-line /></svg>
+                <li data-step>
+                  <span class="step-n">1</span>
+                  <div>
+                    <h4>Chame no WhatsApp</h4>
+                    <p>Conte o que o carro está apresentando. Uma foto da luz do painel ajuda.</p>
+                  </div>
+                </li>
+                <li data-step>
+                  <span class="step-n">2</span>
+                  <div>
+                    <h4>Traga o carro</h4>
+                    <p>Fazemos o diagnóstico e passamos o orçamento antes de mexer.</p>
+                  </div>
+                </li>
+                <li data-step>
+                  <span class="step-n">3</span>
+                  <div>
+                    <h4>Receba a ordem de serviço</h4>
+                    <p>Tudo registrado por escrito, com os valores detalhados.</p>
+                  </div>
+                </li>
+              </ol>
+            </div>
+
+            <div class="gallery">
+              <figure class="g-a" data-speed="0.92">
+                <img src="./img/amarok.webp" alt="Picape branca atendida em frente à oficina RS Automotive" loading="lazy" width="611" height="777" />
+                <figcaption>Carro na oficina</figcaption>
+              </figure>
+              <figure class="g-b" data-speed="1.08">
+                <img src="./img/multimidia.webp" alt="Central multimídia instalada no painel de um carro" loading="lazy" width="728" height="617" />
+                <figcaption>Central multimídia</figcaption>
+              </figure>
+              <figure class="g-c" data-speed="0.95">
+                <img src="./img/alto-falante-porta.webp" alt="Instalação de alto-falante na porta de um carro" loading="lazy" width="596" height="741" />
+                <figcaption>Som na porta</figcaption>
+              </figure>
+              <figure class="g-d" data-speed="1.1">
+                <img src="./img/corolla-milha.webp" alt="Sedã prata com faróis de milha acesos" loading="lazy" width="788" height="647" />
+                <figcaption>Faróis de milha</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fita de fotos reais -->
+        <div class="photo-strip" aria-label="Fotos de serviços feitos na oficina">
+          <div class="photo-track" data-photo-track>
+            <img src="./img/honda-lateral.webp" alt="Hatch preto com faróis de milha" loading="lazy" width="792" height="445" />
+            <img src="./img/chicote-multimidia.webp" alt="Chicote elétrico preparado para central multimídia" loading="lazy" width="793" height="707" />
+            <img src="./img/corolla-noite.webp" alt="Sedã com faróis de milha amarelos acesos" loading="lazy" width="790" height="790" />
+            <img src="./img/honda-frente.webp" alt="Hatch preto visto de frente com faróis acesos" loading="lazy" width="598" height="561" />
+            <img src="./img/amarok.webp" alt="" loading="lazy" width="611" height="777" />
+            <img src="./img/multimidia.webp" alt="" loading="lazy" width="728" height="617" />
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== CHAMADA ===================== -->
+      <section class="cta-band" aria-label="Chamada para orçamento">
+        <div class="hazard" aria-hidden="true"></div>
+        <div class="container-x cta-inner">
+          <p class="cta-title" data-split>Luz da bateria acesa? Carro não pega? <em>Chama o Ronei.</em></p>
+          <a class="btn btn-gold btn-xl" data-wa="cta" data-magnetic href="https://wa.me/5511952817706" target="_blank" rel="noopener">
+            <span class="btn-icon"><svg aria-hidden="true"><use href="#i-whatsapp" /></svg></span>
+            <span class="btn-text" data-text="Chamar no WhatsApp">Chamar no WhatsApp</span>
+          </a>
+        </div>
+        <div class="hazard" aria-hidden="true"></div>
+      </section>
+
+      <!-- ===================== CONTATO ===================== -->
+      <section id="contato" class="section">
+        <div class="container-x">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow" data-reveal>Contato</p>
+              <h2 class="section-title" data-split>Peça seu orçamento pelo WhatsApp.</h2>
+            </div>
+            <p class="section-lead" data-reveal>Preencha os campos e a mensagem chega pronta para o Ronei.</p>
+          </div>
+
+          <div class="contact-grid">
+            <form class="card form" data-form novalidate data-reveal>
+              <div class="grid gap-5 sm:grid-cols-2">
+                <div class="field">
+                  <label for="f-nome">Seu nome</label>
+                  <input id="f-nome" name="nome" type="text" autocomplete="name" placeholder="Ex.: Marcos Pereira" required aria-describedby="f-nome-err" enterkeyhint="next" />
+                  <p class="field-error" id="f-nome-err" hidden>Escreva seu nome para o Ronei saber com quem está falando.</p>
+                </div>
+                <div class="field">
+                  <label for="f-carro">Carro (marca, modelo e ano)</label>
+                  <input id="f-carro" name="carro" type="text" placeholder="Ex.: Palio 2012" enterkeyhint="next" />
+                </div>
+              </div>
+
+              <fieldset class="field" aria-describedby="f-serv-err">
+                <legend>Do que o carro precisa? <span class="text-muted">(pode marcar mais de um)</span></legend>
+                <div class="chips" data-chips></div>
+                <p class="field-error" id="f-serv-err" hidden>Marque pelo menos um serviço ou conte o que está acontecendo.</p>
+              </fieldset>
+
+              <div class="field">
+                <label for="f-msg">Conte o que está acontecendo</label>
+                <textarea id="f-msg" name="mensagem" rows="3" placeholder="Ex.: o carro não pega pela manhã e a luz da bateria acende no painel."></textarea>
+              </div>
+
+              <div class="preview" aria-live="polite">
+                <p class="preview-label"><span class="live-dot"></span>Prévia da mensagem</p>
+                <p class="preview-text" data-preview></p>
+              </div>
+
+              <button class="btn btn-gold btn-lg w-full" type="submit">
+                <span class="btn-icon"><svg aria-hidden="true"><use href="#i-whatsapp" /></svg></span>
+                <span class="btn-text" data-text="Enviar pelo WhatsApp">Enviar pelo WhatsApp</span>
+              </button>
+            </form>
+
+            <aside class="contact-info" data-reveal>
+              <p class="label">Atendimento</p>
+              <p class="font-display text-4xl font-medium">Ronei</p>
+
+              <a class="contact-line" href="tel:+551141715554">
+                <span class="contact-ico"><i data-lucide="phone" aria-hidden="true"></i></span>
+                <span><small>Telefone fixo</small>(11) 4171-5554</span>
+                <i class="contact-arrow" data-lucide="arrow-up-right" aria-hidden="true"></i>
+              </a>
+              <a class="contact-line" data-wa="contato" href="https://wa.me/5511952817706" target="_blank" rel="noopener">
+                <span class="contact-ico"><svg aria-hidden="true"><use href="#i-whatsapp" /></svg></span>
+                <span><small>WhatsApp</small>(11) 95281-7706</span>
+                <i class="contact-arrow" data-lucide="arrow-up-right" aria-hidden="true"></i>
+              </a>
+
+              <div>
+                <p class="label">Endereço</p>
+                <address class="not-italic leading-relaxed">
+                  Rua José Barros Magaldi, nº 1253<br />
+                  Jd. Novo Sto. Amaro, São Paulo<br />
+                  <span class="text-muted">Estacionamento Academia California</span>
+                </address>
+              </div>
+              <div>
+                <p class="label">Horário</p>
+                <p class="text-muted">Consulte o horário pelo WhatsApp antes de vir.</p>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== MAPA ===================== -->
+      <section class="map" aria-label="Mapa da oficina">
+        <iframe
+          title="Mapa: RS Automotive, Rua José Barros Magaldi, 1253, Jardim Novo Santo Amaro, São Paulo"
+          src="https://www.google.com/maps?q=Rua+Jos%C3%A9+Barros+Magaldi,+1253,+Jardim+Novo+Santo+Amaro,+S%C3%A3o+Paulo+-+SP,+05815-010&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <div class="container-x map-card-wrap">
+          <div class="card map-card" data-reveal>
+            <p class="font-display text-xl font-medium">RS Automotive</p>
+            <p class="mt-1 text-sm text-muted">Rua José Barros Magaldi, nº 1253, Jd. Novo Sto. Amaro</p>
+            <a
+              class="btn btn-gold mt-4 w-full"
+              href="https://www.google.com/maps/dir/?api=1&destination=Rua+Jos%C3%A9+Barros+Magaldi,+1253,+Jardim+Novo+Santo+Amaro,+S%C3%A3o+Paulo+-+SP"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="btn-icon"><i data-lucide="navigation" aria-hidden="true"></i></span>
+              <span class="btn-text" data-text="Abrir rota no Google Maps">Abrir rota no Google Maps</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===================== RODAPÉ ===================== -->
+    <footer class="footer">
+      <div class="container-x footer-grid">
+        <div class="footer-brand">
+          <img src="./img/logo-rs-720.webp" alt="RS Automotive, Elétrica e Injeção" width="720" height="238" loading="lazy" />
+          <p class="footer-motto">Deus Proverá</p>
+        </div>
+        <nav aria-label="Serviços">
+          <p class="footer-title">Serviços</p>
+          <ul class="footer-list">
+            <li><a href="#servicos">Injeção eletrônica</a></li>
+            <li><a href="#servicos">Motor de partida e alternador</a></li>
+            <li><a href="#servicos">Vidro e trava elétrica</a></li>
+            <li><a href="#servicos">Som e alarme</a></li>
+            <li><a href="#servicos">Bateria</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Navegação">
+          <p class="footer-title">Navegação</p>
+          <ul class="footer-list">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#como-trabalhamos" data-scroll-to="1">Como trabalhamos</a></li>
+            <li><a href="#oficina">A oficina</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+        <div>
+          <p class="footer-title">Contato</p>
+          <ul class="footer-list">
+            <li><a href="tel:+551141715554">(11) 4171-5554</a></li>
+            <li><a data-wa="footer" href="https://wa.me/5511952817706" target="_blank" rel="noopener">(11) 95281-7706</a></li>
+            <li>
+              <a class="inline-flex items-center gap-2" href="https://www.instagram.com/rsautomotive_/" target="_blank" rel="noopener">
+                <svg class="size-[18px]" aria-hidden="true"><use href="#i-instagram" /></svg>@rsautomotive_
+              </a>
+            </li>
+            <li>
+              <a class="inline-flex items-center gap-2" href="https://www.facebook.com/RS-Automotive-2374136982819591" target="_blank" rel="noopener">
+                <svg class="size-[18px]" aria-hidden="true"><use href="#i-facebook" /></svg>Facebook
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-giant" aria-hidden="true">RS AUTOMOTIVE</p>
+      <div class="container-x footer-bottom">
+        <p>© <span data-year>2026</span> RS Automotive. Todos os direitos reservados.</p>
+        <p>Rua José Barros Magaldi, 1253, Jd. Novo Sto. Amaro, São Paulo</p>
+      </div>
+    </footer>
+
+    <!-- Botão flutuante do WhatsApp -->
+    <a class="wa-float" data-wa="flutuante" data-wa-float href="https://wa.me/5511952817706" target="_blank" rel="noopener" aria-label="Conversar no WhatsApp">
+      <span class="wa-float-ring" aria-hidden="true"></span>
+      <svg class="size-7" aria-hidden="true"><use href="#i-whatsapp" /></svg>
+    </a>
+
+    <!-- Ícones de marca (o lucide não traz logos de redes sociais) -->
+    <svg width="0" height="0" class="absolute" aria-hidden="true">
+      <symbol id="i-whatsapp" viewBox="0 0 24 24">
+        <path
+          fill="currentColor"
+          d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.64-2.05-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.48.71.31 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.5h-.01a9.43 9.43 0 0 1-4.8-1.32l-.35-.2-3.57.93.95-3.48-.22-.36a9.4 9.4 0 0 1-1.45-5.02c0-5.2 4.24-9.44 9.46-9.44a9.4 9.4 0 0 1 6.68 2.77 9.38 9.38 0 0 1 2.77 6.68c0 5.21-4.24 9.44-9.46 9.44m8.04-17.48A11.3 11.3 0 0 0 12.05.69C5.78.69.68 5.79.68 12.05c0 2 .52 3.96 1.52 5.68L.58 23.62l6.02-1.58a11.33 11.33 0 0 0 5.44 1.39h.01c6.26 0 11.36-5.1 11.37-11.37 0-3.03-1.18-5.89-3.33-8.03"
+        />
+      </symbol>
+      <symbol id="i-instagram" viewBox="0 0 24 24">
+        <rect x="2.5" y="2.5" width="19" height="19" rx="5.5" fill="none" stroke="currentColor" stroke-width="1.8" />
+        <circle cx="12" cy="12" r="4.3" fill="none" stroke="currentColor" stroke-width="1.8" />
+        <circle cx="17.6" cy="6.4" r="1.2" fill="currentColor" />
+      </symbol>
+      <symbol id="i-facebook" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M13.5 21.5v-8h2.7l.4-3.2h-3.1V8.3c0-.9.3-1.6 1.6-1.6h1.7V3.9c-.3 0-1.3-.1-2.5-.1-2.4 0-4.1 1.5-4.1 4.2v2.3H7.5v3.2h2.7v8z" />
+      </symbol>
+    </svg>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
